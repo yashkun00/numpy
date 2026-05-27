@@ -1,0 +1,10 @@
+# numpy
+numpy in tensorflow, doing image prediction
+
+import numpy as np
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Densex = np.array([[1], [2], [3], [4]])y = np.array([[2], [4], [6], [8]])
+model = Sequential([Dense(1, input_shape=(1, ))])
+model.compile(optimizer='sgd', loss='mse')
+model.fit(x, y, epochs=100, verbose=0)
+print(model.predict(np.array([[6]])))
