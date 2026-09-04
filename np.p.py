@@ -1,4 +1,3 @@
-# numpy
 numpy in tensorflow, doing image prediction
 
 import numpy as np
